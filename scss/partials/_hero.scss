@@ -1,0 +1,30 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  background-color: #640fc5;
+  padding-inline: 50px;
+  padding-top: 90px;
+  border-bottom: 2px solid black;
+  h1 {
+    font-size: 50px;
+    color: #f4f4f4;
+  }
+  .headline {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateY(0px);
+    opacity: 0;
+    animation: rotation 4s forwards;
+  }
+}
+@keyframes rotation {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}

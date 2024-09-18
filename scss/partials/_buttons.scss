@@ -1,0 +1,28 @@
+@mixin buttonsStyles {
+  font-family: inherit;
+  border-radius: 10px;
+  padding-block: 5px;
+  padding-inline: 10px;
+}
+
+.hButtons {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 50px;
+  button {
+    @include buttonsStyles;
+    &:hover {
+      transform: scale(1.1);
+      box-shadow: 1px 1px 5px black;
+    }
+    &:first-child {
+      background-color: #0e6cff;
+    }
+    &:nth-child(2) {
+      background-color: #ff8700;
+    }
+    &:nth-child(3) {
+      background-color: #4caf50;
+    }
+  }
+}
